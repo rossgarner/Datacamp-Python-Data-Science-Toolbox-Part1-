@@ -5,7 +5,7 @@
 #To get the first 2 characters in a tweet x, use x[0:2]. To check equality, use a Boolean filter with ==.
 
 
-# Select retweets from the Twitter DataFrame: result. Added this code to remind myself of the syntax for lambda functions. I didn't find datacamp very clear in the explanation of adding the column you at the end of the function header
+# Select retweets from the Twitter DataFrame: result. Added this code to remind myself of the syntax for lambda functions. I didn't find datacamp very clear in the explanation of adding the column at the end of the function header
 result = filter(lambda x: x[0:2] == 'RT', tweets_df['text'])
 
 # Create list from filter object result: res_list
