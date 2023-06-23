@@ -1,0 +1,16 @@
+#Bringing it all together (1)
+
+#In the filter () call, pass a lambda function and the sequence of tweets as strings tweets_df['text']. 
+#The lambda function should check if the first 2 characters in a tweet x are 'RT'. Assign the resulting filter object to result.
+#To get the first 2 characters in a tweet x, use x[0:2]. To check equality, use a Boolean filter with ==.
+
+
+# Select retweets from the Twitter DataFrame: result. Added this code to remind myself of the syntax for lambda functions. I didn't find datacamp very clear in the explanation of adding the column you at the end of the function header
+result = filter(lambda x: x[0:2] == 'RT', tweets_df['text'])
+
+# Create list from filter object result: res_list
+res_list = list(result)
+
+# Print all retweets in res_list
+for tweet in res_list:
+    print(tweet)
